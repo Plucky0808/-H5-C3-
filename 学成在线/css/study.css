@@ -1,0 +1,385 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #f3f5f7;
+
+}
+
+.w {
+	/* 设置所有的行宽度都为1200 居中对齐 */
+	width: 1200px;
+	margin: 0 auto;
+}
+
+li {
+	list-style: none;
+	/* 清除无序列表前面的小点点 */
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+/* 标题模块开始----start */
+.header {
+	/* 这里要注意样式层叠 会覆盖掉上面W的auto */
+	margin: 28px auto;
+	height: 46px;
+	/* background-color: pink; */
+}
+
+.logo {
+	float: left;
+	width: 198px;
+	height: 46px;
+	/* background-color: purple; */
+}
+
+.nav {
+	float: left;
+	margin-left: 60px;
+}
+
+.nav ul li {
+	float: left;
+	/* 这里不需要设置高度 他继承了父级元素的高度 */
+
+}
+
+.nav ul li a {
+	/* 把行内元素a转化成块级元素 */
+	display: block;
+	height: 46px;
+	padding: 0 15px;
+	color: #68696a;
+	font-size: 18px;
+	line-height: 46px;
+}
+
+.nav ul li a:hover {
+	color: #00a4ff;
+	border-bottom: 2px solid #00a4ff;
+}
+
+.search {
+	float: left;
+	margin-left: 60px;
+	width: 412px;
+	height: 46px;
+	background-color: #00A4FF;
+}
+
+.search input {
+	float: left;
+	width: 345px;
+	height: 44px;
+	border: 1px solid #00A4FF;
+	border-right: 0;
+	font-size: 14px;
+	color: #bfbfbf;
+	padding-left: 15px;
+}
+
+.search button {
+	float: left;
+	width: 50px;
+	height: 46px;
+	background-color: blue;
+	border: 0;
+	background: url(../img/btn.png);
+}
+
+.user {
+	float: right;
+	margin-right: 30px;
+	line-height: 46px;
+	font-size: 14px;
+	color: #666666;
+}
+
+/* 标题模块结束---------end */
+
+
+/* banner模块开始 */
+.banner {
+	/* 这里是通栏的盒子 */
+	height: 420px;
+	background-color: #1c036c;
+}
+
+.banner .w {
+	/* 这里是版心 */
+	height: 421px;
+	background: url(../img/banner2.png) no-repeat top center;
+}
+
+.subnav {
+	float: left;
+	width: 190px;
+	height: 421px;
+	background: rgba(0, 0, 0, 0.3)
+}
+
+.subnav ul li {
+	height: 46px;
+	padding: 0 20px 0;
+	line-height: 46px;
+}
+
+.subnav ul li a {
+
+	color: #ffffff;
+}
+
+.subnav ul li a span {
+	float: right;
+}
+
+.subnav ul li a:hover {
+	color: #00A4FF;
+}
+
+/* 这里是课程模块开始 */
+.course {
+	float: right;
+	width: 230px;
+	height: 300px;
+	margin-top: 50px;
+	background-color: #ffffff;
+}
+
+.banner .course h2 {
+	height: 48px;
+	background-color: #9bceea;
+	font-size: 18px;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 48px;
+}
+
+.course .bd {
+	padding: 0 20px;
+}
+
+.course .bd ul li {
+	padding: 15px 0;
+	border-bottom: 1px solid #efefef;
+}
+
+.course .bd ul li h4 {
+	font-size: 14px;
+	color: #5a5a5a;
+}
+
+.course .bd ul li p {
+	font-size: 12px;
+	color: #4e4e4e;
+}
+
+.course .bd .more {
+	/* 课程模块里的全部课程 */
+	display: block;
+	height: 40px;
+	margin-top: 5px;
+	border: 2px solid #22b0ff;
+	text-align: center;
+	line-height: 40px;
+	font-size: 16px;
+	color: #00a4ff;
+	font-weight: 700;
+}
+
+/* banner模块的结束---end */
+
+
+/* 这里是精品内容模块开始----- */
+.goods {
+	height: 60px;
+	margin-top: 5px;
+	background-color: #ffffff;
+	box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.1);
+	line-height: 60px;
+	/* 因为行高会继承 */
+}
+
+.goods h3 {
+	float: left;
+	/* margin-left: 30px; */
+	padding-left: 30px;
+	font-size: 16px;
+	color: #00a4ff;
+}
+
+.goods ul {
+	float: left;
+	margin-left: 30px;
+}
+
+.goods ul li {
+	/* display: inline-block; */
+	float: left;
+}
+
+.goods ul li a {
+	/* float: left; */
+	padding: 0 20px;
+	font-size: 16px;
+	color: #050505;
+	border-left: 1px solid #bfbfbf;
+
+}
+
+.goods .mod {
+	float: right;
+	/* margin-right: 30px; */
+	padding-right: 30px;
+	font-size: 14px;
+	color: #00a4ff;
+}
+
+/* 这里是精品内容模块结束 */
+
+/* 4.这里是box内容模块的开始 */
+.box {
+	margin-top: 30px;
+}
+
+.box-hd {
+	height: 42px;
+}
+
+.box-hd h3 {
+	float: left;
+	font-size: 20px;
+	color: #494949;
+}
+
+.box-hd a {
+	float: right;
+	margin-top: 10px;
+	margin-right: 30px;
+	font-size: 12px;
+	color: #a5a5a5;
+}
+
+/* 此时给予父级盒子足够的宽度 则子元素不会撑开 */
+
+/* 这里是精品内容推荐模块 开始------- 很多个li那里 */
+.box-bd ul {
+	width: 1225px;
+
+}
+
+
+.box-bd ul li {
+	position: relative;
+	/* 子绝父相 */
+	float: left;
+	width: 228px;
+	height: 270px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	background-color: #ffffff;
+}
+
+.box-bd .hot {
+	position: absolute;
+	/* 子绝父相 */
+	top: 4px;
+	right: -4px;
+}
+
+.box-bd ul li>img {
+	width: 100%;
+}
+
+/* 使用亲儿子选择器 设定离父级最近的img图片的样式 */
+
+.box-bd ul li h3 {
+	margin: 20px 20px 20px 25px;
+	font-size: 14px;
+	color: #050505;
+	font-weight: 400;
+}
+
+.box-bd ul li .info {
+	margin-left: 25px;
+	font-size: 12px;
+	color: #999999;
+}
+
+.box-bd ul li span {
+	color: #ff7c2d;
+}
+
+/* 4.这里是box内容模块的结束 */
+
+/* 这里是底部模块的开始 */
+.footer {
+	height: 417px;
+	background-color: #fff;
+}
+
+.footer .copyright {
+	padding-top: 30px;
+	margin-left: 20px;
+	float: left;
+}
+
+.footer .copyright p {
+	margin: 25px 0 20px 0;
+	font-size: 12px;
+	color: #666666;
+}
+
+.footer .copyright .app {
+	display: block;
+	width: 118px;
+	height: 33px;
+	border: 1px solid #00A4FF;
+	font-size: 16px;
+	color: #00a4ff;
+	text-align: center;
+	line-height: 33px;
+}
+
+.footer .links {
+	float: right;
+}
+
+.links dl {
+	float: left;
+	margin-top: 30px;
+	margin-left: 100px;
+}
+
+.links dl dd {
+	margin-bottom: 15px;
+	font-size: 16px;
+	color: #333;
+}
+
+.links dl dt a {
+	/* 在这里忘了给加A */
+	font-size: 12px;
+	color: #333;
+}
+
+/* 这里是底部模块的结束 */
